@@ -1143,7 +1143,7 @@ const closeModal = () => {
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2 [&>*]:min-w-0">
             <div class="min-w-0 md:col-span-2">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.stripeSecretKey') }}</label>
-              <Input v-model="stripeConfig.secret_key" :placeholder="t('admin.paymentChannels.modal.stripeSecretKeyPlaceholder')" />
+              <Input v-model="stripeConfig.secret_key" type="password" :placeholder="t('admin.paymentChannels.modal.stripeSecretKeyPlaceholder')" />
             </div>
             <div class="min-w-0">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.stripePublishableKey') }}</label>
@@ -1151,7 +1151,7 @@ const closeModal = () => {
             </div>
             <div class="min-w-0">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.stripeWebhookSecret') }}</label>
-              <Input v-model="stripeConfig.webhook_secret" :placeholder="t('admin.paymentChannels.modal.stripeWebhookSecretPlaceholder')" />
+              <Input v-model="stripeConfig.webhook_secret" type="password" :placeholder="t('admin.paymentChannels.modal.stripeWebhookSecretPlaceholder')" />
             </div>
             <div class="min-w-0">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.stripeSuccessUrl') }}</label>
@@ -1296,7 +1296,7 @@ const closeModal = () => {
             </div>
             <div class="min-w-0 md:col-span-2">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.epusdtAuthToken') }}</label>
-              <Input v-model="epusdtConfig.auth_token" :placeholder="t('admin.paymentChannels.modal.epusdtAuthTokenPlaceholder')" />
+              <Input v-model="epusdtConfig.auth_token" type="password" :placeholder="t('admin.paymentChannels.modal.epusdtAuthTokenPlaceholder')" />
             </div>
             <div class="min-w-0">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.epusdtTradeType') }}</label>
@@ -1362,7 +1362,7 @@ const closeModal = () => {
             </div>
             <div class="min-w-0">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.okpayMerchantToken') }}</label>
-              <Input v-model="okpayConfig.merchant_token" :placeholder="t('admin.paymentChannels.modal.okpayMerchantTokenPlaceholder')" />
+              <Input v-model="okpayConfig.merchant_token" type="password" :placeholder="t('admin.paymentChannels.modal.okpayMerchantTokenPlaceholder')" />
             </div>
             <div class="min-w-0">
               <label class="block text-xs font-medium text-muted-foreground mb-1.5">{{ t('admin.paymentChannels.modal.okpayExchangeRate') }}</label>
